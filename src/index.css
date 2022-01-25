@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .side-bar {
+    @apply w-6 h-6 ml-4 text-gray-400 cursor-pointer hover:bg-red-600 hover:p-1 hover:text-white hover:rounded-md transition-all duration-300 ease-linear;
+  }
+
+  .tooltip {
+    @apply absolute w-auto top-40 left-10 rounded-md shadow-md text-white bg-gray-900 text-xs font-bold transition-all duration-100 scale-0 origin-left;
+  }
+}
