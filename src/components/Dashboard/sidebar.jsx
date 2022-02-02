@@ -11,7 +11,7 @@ import "tippy.js/themes/light.css";
 const SideBar = () => {
   return (
     <>
-      <div className="flex flex-col justify-between  w-12 h-96 mt-10  ">
+      <div className="flex flex-col justify-between  w-12 h-96 mt-10 ">
         <div className="flex flex-col gap-6">
           <Tippy
             content={<span className="p-2 bg-yellow-300">Dashboard</span>}

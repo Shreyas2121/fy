@@ -6,7 +6,7 @@ import UserLogin from "../components/userlogin";
 import UserSignUp from "../components/usersignup";
 
 const Register = () => {
-  return <MainRegister />;
+  return <CompanyRegister />;
 };
 
 export default Register;
