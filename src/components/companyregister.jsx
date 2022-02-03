@@ -3,7 +3,7 @@ import React from "react";
 const CompanyRegister = () => {
   return (
     <>
-      <div className="min-h-screen flex items-center justify-center absolute top-12 left-14 ">
+      <div className="min-h-screen flex items-center justify-center ">
         <h1 className="text-2xl font-bold mb-4">Register your Company Now!</h1>
 
         <form className="space-y-6">

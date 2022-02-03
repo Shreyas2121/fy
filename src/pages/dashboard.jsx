@@ -7,8 +7,10 @@ const Dashboard = () => {
   return (
     <>
       <TitleBar />
-      <SideBar />
-      <CompanyRegDash />
+      <div className="flex">
+        <SideBar />
+        <CompanyRegDash />
+      </div>
     </>
   );
 };
