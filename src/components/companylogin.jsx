@@ -1,21 +1,28 @@
-import React from "react";
+import React, { useRef } from "react";
 
 function CompanyLogin() {
+  const idRef = useRef();
+  const passRef = useRef();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(idRef.current.value);
+  };
   return (
     <>
       <div className="min-h-screen flex items-center justify-center bg-blue-400">
         <div className="bg-white p-16 rounded shadow-2xl w-1/3">
           <h1 className="text-3xl font-bold mb-4">Sign In!</h1>
 
-          <form className="space-y-6">
+          <form className="space-y-6" onSubmit={handleSubmit}>
             <div>
               <label className="block">Company ID</label>
-              <input className="mt-2 rounded" type="text" />
+              <input ref={idRef} className="mt-2 rounded" type="text" />
             </div>
 
             <div>
               <label className="block">Password</label>
-              <input className="mt-2 rounded" type="password" />
+              <input ref={passRef} className="mt-2 rounded" type="password" />
             </div>
 
             <div className="flex gap-3">
