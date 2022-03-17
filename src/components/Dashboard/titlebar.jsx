@@ -1,14 +1,64 @@
 import React from "react";
 import logo from "../../assets/Logo.svg";
+import styled from "styled-components";
+import { LanguageOutlined, SearchOutlined } from "@mui/icons-material";
+
+const Container = styled.div`
+  height: 50px;
+  border-bottom: 0.5px solid rgb(231, 228, 228);
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #555;
+`;
+
+const Wrapper = styled.div`
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`;
+
+const Search = styled.div`
+  display: flex;
+  align-items: center;
+  border: 0.5px solid lightgray;
+  padding: 3px;
+`;
+
+const Input = styled.input`
+  border: none;
+  outline: none;
+`;
+
+const Items = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
+const Item = styled.div`
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+`;
 
 const TitleBar = () => {
   return (
-    <>
-      <div className="flex justify-between h-10  bg-blue-400  border-b-2  sticky top-0 z-10">
-        <img className="ml-4 p-1" src={logo} />
-        <h2 className="mr-4 mt-2">Welcome,Company</h2>
-      </div>
-    </>
+    <Container>
+      <Wrapper>
+        <Search>
+          <Input type="text" placeholder="Search..." />
+          <SearchOutlined />
+        </Search>
+        <Items>
+          <Item>
+            <LanguageOutlined style={{ fontSize: "20px" }} />
+            English
+          </Item>
+        </Items>
+      </Wrapper>
+    </Container>
   );
 };
 export default TitleBar;

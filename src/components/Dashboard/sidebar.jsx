@@ -1,61 +1,94 @@
 import React from "react";
-import product from "../../assets/Product.svg";
-import customer from "../../assets/Customer.svg";
-import { IoMdLogOut } from "react-icons/io";
-import { MdSpaceDashboard } from "react-icons/md";
-import { RiUserSharedLine } from "react-icons/ri";
-import { GrProductHunt } from "react-icons/gr";
-import Tippy from "@tippyjs/react";
-import "tippy.js/themes/light.css";
+import logo from "../../assets/Logo.svg";
+import styled from "styled-components";
+import {
+  AccountCircleOutlined,
+  Dashboard,
+  ExitToApp,
+  PersonOutline,
+  Store,
+} from "@mui/icons-material";
+
+const Top = styled.div`
+  height: 50px;
+  border-right: 0.5px solid rgb(230, 227, 227);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
+const Container = styled.div`
+  flex: 1;
+  border-right: 0.5px solid rgb(230, 227, 227);
+  min-height: 100vh;
+`;
+
+const Image = styled.img``;
+
+const Center = styled.div`
+  padding-left: 10px;
+  margin-top: 50px;
+`;
+
+const Lists = styled.ul`
+  list-style: none;
+  margin: 0;
+  margin-top: 10px;
+  padding: 0;
+`;
+
+const List = styled.li`
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #ece8ff;
+  }
+`;
+
+const Text = styled.span`
+  font-size: 17px;
+  font-weight: 600;
+  color: #888;
+  margin-left: 10px;
+`;
 
 const SideBar = () => {
   return (
-    <>
-      <div
-        className="flex flex-col justify-between  w-12 h-96 mt-12 sticky top-96 bg-bl items-center "
-        // style={{ backgroundColor: "rgb(228,228,250)" }}
-      >
-        <div className="flex flex-col gap-6">
-          <Tippy
-            content={<span className="p-2 bg-yellow-300">Dashboard</span>}
-            placement="right"
-            theme="light"
-          >
-            <div>
-              <MdSpaceDashboard className="side-bar" />
-            </div>
-          </Tippy>
-          <Tippy
-            content={<span className="p-2 bg-yellow-300">Customer</span>}
-            placement="right"
-            theme="light"
-          >
-            <div>
-              <RiUserSharedLine className="side-bar" id="cust" />
-            </div>
-          </Tippy>
-          <Tippy
-            content={<span className="p-2 bg-yellow-300">Products</span>}
-            placement="right"
-            theme="light"
-          >
-            <div>
-              <GrProductHunt className="side-bar" />
-            </div>
-          </Tippy>
-        </div>
-
-        <Tippy
-          content={<span className="p-2 bg-yellow-300">Sign Out</span>}
-          placement="right"
-          theme="light"
-        >
-          <div>
-            <IoMdLogOut className="side-bar" />
-          </div>
-        </Tippy>
-      </div>
-    </>
+    <Container>
+      <Top>
+        <Image src={logo} />
+      </Top>
+      <hr />
+      <Center>
+        <Lists>
+          <List>
+            <Dashboard style={{ fontSize: "24px", color: "#7451f8" }} />
+            <Text>Dashboard</Text>
+          </List>
+          <List>
+            <Store style={{ fontSize: "24px", color: "#7451f8" }} />
+            <Text>Products</Text>
+          </List>
+          <List>
+            <PersonOutline style={{ fontSize: "24px", color: "#7451f8" }} />
+            <Text>Users</Text>
+          </List>
+          <List>
+            <AccountCircleOutlined
+              style={{ fontSize: "24px", color: "#7451f8" }}
+            />
+            <Text>Profile</Text>
+          </List>
+          <List>
+            <ExitToApp style={{ fontSize: "24px", color: "#7451f8" }} />
+            <Text>LogOut</Text>
+          </List>
+        </Lists>
+      </Center>
+    </Container>
   );
 };
 
