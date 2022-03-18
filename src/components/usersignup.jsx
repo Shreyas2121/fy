@@ -1,6 +1,12 @@
-import React from "react";
+import React, { useRef } from "react";
 
 const UserSignUp = () => {
+  const nameRef = useRef();
+  const emailRef = useRef();
+  const passRef = useRef();
+  const cPassRef = useRef();
+
+  const handleSubmit = (e) => {};
   return (
     <>
       <div className="min-h-screen flex items-center justify-center bg-blue-400">
@@ -9,25 +15,45 @@ const UserSignUp = () => {
             Register Individual Account!
           </h1>
 
-          <form className="space-y-6">
+          <form className="space-y-6" onClick={handleSubmit}>
             <div>
               <label className="block">Name</label>
-              <input className="mt-2 rounded" type="text" required />
+              <input
+                ref={nameRef}
+                className="mt-2 rounded"
+                type="text"
+                required
+              />
             </div>
 
             <div>
               <label className="block">Email</label>
-              <input className="mt-2 rounded" type="email" required />
+              <input
+                ref={emailRef}
+                className="mt-2 rounded"
+                type="email"
+                required
+              />
             </div>
 
             <div>
               <label className="block">Password</label>
-              <input className="mt-2 rounded" type="password" required />
+              <input
+                ref={passRef}
+                className="mt-2 rounded"
+                type="password"
+                required
+              />
             </div>
 
             <div>
               <label className="block">Confirm Password</label>
-              <input className="mt-2 rounded" type="password" required />
+              <input
+                ref={cPassRef}
+                className="mt-2 rounded"
+                type="password"
+                required
+              />
             </div>
 
             <button className="w-1/3 flex justify-center  py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">

@@ -1,6 +1,18 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 
 const CompanyRegister = () => {
+  const nameRef = useRef();
+  const emailRef = useRef();
+  const panRef = useRef();
+  const cinRef = useRef();
+  const cityRef = useRef();
+  const posRef = useRef();
+
+  const [card, setCard] = useState();
+  const [cheque, setCheque] = useState();
+  // console.log(card, cheque);
+
+  const handleSubmit = (e) => {};
   return (
     <>
       <div className="min-h-screen flex items-center justify-center ">
@@ -11,39 +23,47 @@ const CompanyRegister = () => {
             <div>
               <div>
                 <label className="block">Company Name</label>
-                <input className="mt-2 rounded" type="text" />
+                <input ref={nameRef} className="mt-2 rounded" type="text" />
               </div>
 
               <div className="mt-3">
                 <label className="block">Email</label>
-                <input className="mt-2 rounded" type="email" />
+                <input ref={emailRef} className="mt-2 rounded" type="email" />
               </div>
 
               <div className="mt-3">
                 <label className="block">Pan Card</label>
-                <input className="mt-2 block" type="file" />
+                <input
+                  onChange={(e) => setCard(e.target.files[0])}
+                  className="mt-2 block"
+                  type="file"
+                />
               </div>
 
               <div className="mt-3">
                 <label className="block">Blank Cheque</label>
-                <input className="mt-2" type="file" />
+                <input
+                  onChange={(e) => setCheque(e.target.files[0])}
+                  className="mt-2"
+                  type="file"
+                />
               </div>
             </div>
 
             <div>
               <div>
                 <label className="block">CIN Number</label>
-                <input className="mt-2 rounded" type="number" />
+                <input ref={cinRef} className="mt-2 rounded" type="number" />
               </div>
 
               <div className="mt-3">
                 <label className="block">City</label>
-                <input className="mt-2 rounded" type="text" />
+                <input ref={cityRef} className="mt-2 rounded" type="text" />
               </div>
 
               <div className="mt-3">
                 <label className="block">Postal Code</label>
-                <input className="mt-2 rounded" type="number" />
+                <input ref={posRef} className="mt-2 rounded" type="number" />
               </div>
             </div>
           </div>
