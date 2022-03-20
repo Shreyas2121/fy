@@ -7,17 +7,18 @@ import UserLogin from "./components/userlogin";
 import CompanyLogin from "./components/companylogin";
 import UserSignUp from "./components/usersignup";
 import CompanyRegister from "./components/companyregister";
+import Users from "./pages/company/Users";
 
 function App() {
   return (
     <div className="App">
       <Routes>
         <Route path="/" element={<UserLogin />} />
-        <Route path="/clogin" element={<CompanyLogin />} />
-        <Route path="/cregister" element={<CompanyRegister />} />
-        <Route path="/signup" element={<UserSignUp />} />
+        <Route path="clogin" element={<CompanyLogin />} />
+        <Route path="cregister" element={<CompanyRegister />} />
+        <Route path="signup" element={<UserSignUp />} />
         {/* <Route path="/profile" element={<Profile />} /> */}
-        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="dashboard/*" element={<Dashboard />} />
       </Routes>
     </div>
   );

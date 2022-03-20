@@ -8,6 +8,7 @@ import {
   PersonOutline,
   Store,
 } from "@mui/icons-material";
+import { Link } from "react-router-dom";
 
 const Top = styled.div`
   height: 50px;
@@ -64,18 +65,22 @@ const SideBar = () => {
       <hr />
       <Center>
         <Lists>
-          <List>
-            <Dashboard style={{ fontSize: "24px", color: "#7451f8" }} />
-            <Text>Dashboard</Text>
-          </List>
+          <Link to="/dashboard">
+            <List>
+              <Dashboard style={{ fontSize: "24px", color: "#7451f8" }} />
+              <Text>Dashboard</Text>
+            </List>
+          </Link>
           <List>
             <Store style={{ fontSize: "24px", color: "#7451f8" }} />
             <Text>Products</Text>
           </List>
-          <List>
-            <PersonOutline style={{ fontSize: "24px", color: "#7451f8" }} />
-            <Text>Users</Text>
-          </List>
+          <Link to="/dashboard/users">
+            <List>
+              <PersonOutline style={{ fontSize: "24px", color: "#7451f8" }} />
+              <Text>Users</Text>
+            </List>
+          </Link>
           <List>
             <AccountCircleOutlined
               style={{ fontSize: "24px", color: "#7451f8" }}
