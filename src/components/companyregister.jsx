@@ -41,7 +41,12 @@ const CompanyRegister = () => {
                   <input
                     id="file1"
                     onChange={(e) => setCard(e.target.files[0])}
-                    className="mt-2  "
+                    className="mt-2 block w-full text-sm text-slate-500
+                    file:mr-4 file:py-2 file:px-4
+                    file:rounded-full file:border-0
+                    file:text-sm file:font-semibold
+                    file:bg-violet-50 file:text-violet-700
+                    hover:file:bg-violet-100  "
                     type="file"
                   />
                 </div>
@@ -52,7 +57,12 @@ const CompanyRegister = () => {
                   <input
                     id="file2"
                     onChange={(e) => setCheque(e.target.files[0])}
-                    className="mt-2"
+                    className="mt-2 block w-full text-sm text-slate-500
+                    file:mr-4 file:py-2 file:px-4
+                    file:rounded-full file:border-0
+                    file:text-sm file:font-semibold
+                    file:bg-violet-50 file:text-violet-700
+                    hover:file:bg-violet-100"
                     type="file"
                   />
                 </div>

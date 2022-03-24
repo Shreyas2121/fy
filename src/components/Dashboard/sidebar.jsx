@@ -24,7 +24,11 @@ const Container = styled.div`
   min-height: 100vh;
 `;
 
-const Image = styled.img``;
+const Logo = styled.span`
+  font-size: 20px;
+  font-weight: bold;
+  color: #6439ff;
+`;
 
 const Center = styled.div`
   padding-left: 10px;
@@ -60,7 +64,7 @@ const SideBar = () => {
   return (
     <Container>
       <Top>
-        <Image src={logo} />
+        <Logo>ChainKart</Logo>
       </Top>
       <hr />
       <Center>
@@ -71,22 +75,30 @@ const SideBar = () => {
               <Text>Dashboard</Text>
             </List>
           </Link>
-          <List>
-            <Store style={{ fontSize: "24px", color: "#7451f8" }} />
-            <Text>Products</Text>
-          </List>
+
+          <Link to="/dashboard/products">
+            <List>
+              <Store style={{ fontSize: "24px", color: "#7451f8" }} />
+              <Text>Products</Text>
+            </List>
+          </Link>
+
           <Link to="/dashboard/users">
             <List>
               <PersonOutline style={{ fontSize: "24px", color: "#7451f8" }} />
               <Text>Users</Text>
             </List>
           </Link>
-          <List>
-            <AccountCircleOutlined
-              style={{ fontSize: "24px", color: "#7451f8" }}
-            />
-            <Text>Profile</Text>
-          </List>
+
+          <Link to="/dashboard/cprofile">
+            <List>
+              <AccountCircleOutlined
+                style={{ fontSize: "24px", color: "#7451f8" }}
+              />
+              <Text>Profile</Text>
+            </List>
+          </Link>
+
           <List>
             <ExitToApp style={{ fontSize: "24px", color: "#7451f8" }} />
             <Text>LogOut</Text>
