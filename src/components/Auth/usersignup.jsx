@@ -1,12 +1,19 @@
-import React, { useRef } from "react";
+import axios from "axios";
+import React, { useState } from "react";
 
 const UserSignUp = () => {
-  const nameRef = useRef();
-  const emailRef = useRef();
-  const passRef = useRef();
-  const cPassRef = useRef();
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [pass, setPass] = useState("");
+  const [cPass, setCPass] = useState("");
 
-  const handleSubmit = (e) => {};
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    if (pass !== cPass) {
+      alert("Passwords do not match");
+    }
+  };
   return (
     <>
       <div className="min-h-screen flex items-center justify-center bg-blue-400">
@@ -15,13 +22,13 @@ const UserSignUp = () => {
             Register Individual Account!
           </h1>
 
-          <form className="space-y-6" onClick={handleSubmit}>
+          <form className="space-y-6">
             <div>
               <label className="block">Name</label>
               <input
-                ref={nameRef}
                 className="mt-2 rounded"
                 type="text"
+                onChange={(e) => setName(e.target.value)}
                 required
               />
             </div>
@@ -29,9 +36,9 @@ const UserSignUp = () => {
             <div>
               <label className="block">Email</label>
               <input
-                ref={emailRef}
                 className="mt-2 rounded"
                 type="email"
+                onChange={(e) => setEmail(e.target.value)}
                 required
               />
             </div>
@@ -39,9 +46,9 @@ const UserSignUp = () => {
             <div>
               <label className="block">Password</label>
               <input
-                ref={passRef}
                 className="mt-2 rounded"
                 type="password"
+                onChange={(e) => setPass(e.target.value)}
                 required
               />
             </div>
@@ -49,14 +56,17 @@ const UserSignUp = () => {
             <div>
               <label className="block">Confirm Password</label>
               <input
-                ref={cPassRef}
                 className="mt-2 rounded"
                 type="password"
+                onChange={(e) => setCPass(e.target.value)}
                 required
               />
             </div>
 
-            <button className="w-1/3 flex justify-center  py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+            <button
+              onClick={handleSubmit}
+              className="w-1/3 flex justify-center  py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+            >
               Register
             </button>
           </form>

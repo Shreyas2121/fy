@@ -1,23 +1,21 @@
 import { Route, Routes } from "react-router-dom";
-import "./App.css";
-import Dashboard from "./pages/dashboard";
-import Profile from "./pages/profile";
-import Register from "./pages/register";
-import UserLogin from "./components/userlogin";
-import CompanyLogin from "./components/companylogin";
-import UserSignUp from "./components/usersignup";
-import CompanyRegister from "./components/companyregister";
+import Dashboard from "./pages/company/dashboard";
+import UserLogin from "./components/Auth/userlogin";
+import CompanyLogin from "./components/Auth/companylogin";
+import UserSignUp from "./components/Auth/usersignup";
+import CompanyRegister from "./components/Auth/companyregister";
 import Users from "./pages/company/Users";
+import Home from "./pages/Main/Home";
 
 function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/" element={<UserLogin />} />
+        <Route path="/" element={<Home />} />
+        <Route path="login" element={<UserLogin />} />
         <Route path="clogin" element={<CompanyLogin />} />
         <Route path="cregister" element={<CompanyRegister />} />
         <Route path="signup" element={<UserSignUp />} />
-        {/* <Route path="/profile" element={<Profile />} /> */}
         <Route path="dashboard/*" element={<Dashboard />} />
       </Routes>
     </div>

@@ -1,21 +1,11 @@
 import React from "react";
-
-import { Outlet } from "react-router-dom";
-import SideBar from "./sidebar";
-import TitleBar from "./titlebar";
-import Widget from "../widget/Widget";
+import Widget from "./widget/Widget";
 import Chart from "./Chart";
 import Featured from "./Featured";
 
 import styled from "styled-components";
 import List from "./List";
 
-const Container = styled.div`
-  display: flex;
-`;
-const Container2 = styled.div`
-  flex: 6;
-`;
 const Widgets = styled.div`
   display: flex;
   padding: 20px;
@@ -42,27 +32,22 @@ const ListTitle = styled.div`
 
 const DashHome = () => {
   return (
-    <Container>
-      <SideBar />
-      <Container2>
-        <TitleBar />
-        {/* <Outlet /> */}
-        <Widgets>
-          <Widget type="user" />
-          <Widget type="order" />
-          <Widget type="earning" />
-          <Widget type="products" />
-        </Widgets>
-        <Charts>
-          <Featured />
-          <Chart />
-        </Charts>
-        <ListContainer>
-          <ListTitle>Latest Transaction</ListTitle>
-          <List />
-        </ListContainer>
-      </Container2>
-    </Container>
+    <>
+      <Widgets>
+        <Widget type="user" />
+        <Widget type="order" />
+        <Widget type="earning" />
+        <Widget type="products" />
+      </Widgets>
+      <Charts>
+        <Featured />
+        <Chart />
+      </Charts>
+      <ListContainer>
+        <ListTitle>Latest Transaction</ListTitle>
+        <List />
+      </ListContainer>
+    </>
   );
 };
 
