@@ -52,7 +52,7 @@ const CompanyRegister = () => {
                 </div>
 
                 <div className="mt-3">
-                  <label className="block">Blank Cheque</label>
+                  <label className="block">Cancelled Cheque</label>
                   {/* <Folder /> */}
                   <input
                     id="file2"

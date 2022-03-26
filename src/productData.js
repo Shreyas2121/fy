@@ -1,9 +1,11 @@
+import image from "./assets/product_img.png";
+
 export const userColumns = [
   { field: "id", headerName: "ID", width: 70 },
   {
     field: "product",
     headerName: "Product",
-    width: 100,
+    width: 200,
   },
   {
     field: "productimg",
@@ -12,9 +14,9 @@ export const userColumns = [
     renderCell: (params) => {
       return (
         <div className="cellWithImg">
-          {console.log(ro)}
-          <img className="cellImg" src={params.row.img} alt="avatar" />
-          {/* {params.row.productimg} */}
+          {console.log(params)}
+          <img className="cellImg" src={params.value} alt="" />
+          {params.row.productimg}
         </div>
       );
     },
@@ -33,10 +35,10 @@ export const userColumns = [
   {
     field: "catergory",
     headerName: "catergory",
-    width: 100,
+    width: 200,
   },
   {
-    field: "Subcatergory",
+    field: "subcatergory",
     headerName: "Subcatergory",
     width: 100,
   },
@@ -47,7 +49,7 @@ export const userRows = [
   {
     id: 1,
     product: "natraj pen",
-    productimg: "https://unsplash.com/photos/d_eLSvL4v9w",
+    productimg: "",
     price: "4000",
     description: "black ink pen",
     catergory: "office supplies",
@@ -56,8 +58,7 @@ export const userRows = [
   {
     id: 2,
     product: "nike shoes",
-    productimg:
-      "https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+    productimg: "",
     price: "100",
     description: "running shoes",
     catergory: "shoes",
@@ -66,8 +67,7 @@ export const userRows = [
   {
     id: 3,
     product: "samsung phone",
-    productimg:
-      "https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+    productimg: "",
     price: "20000",
     description: "White,4GB RAM, 64GB storage",
     catergory: "electronics",
@@ -76,8 +76,7 @@ export const userRows = [
   {
     id: 4,
     product: "Asus vivobook 15",
-    productimg:
-      "https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+    productimg: "",
     price: "50000",
     description: "15.6 inch",
     catergory: "electronics",
@@ -86,8 +85,7 @@ export const userRows = [
   {
     id: 5,
     product: "The midnight library",
-    productimg:
-      "https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+    productimg: "",
     price: "700",
     description: "bestseller book in fiction",
     catergory: "Books",
@@ -105,8 +103,7 @@ export const userRows = [
   {
     id: 7,
     product: "adidas shoes",
-    productimg:
-      "https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+    productimg: "",
     price: "100",
     description: "running shoes",
     catergory: "shoes",
@@ -115,8 +112,7 @@ export const userRows = [
   {
     id: 8,
     product: "nokia phone",
-    productimg:
-      "https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+    productimg: "",
     price: "20000",
     description: "White,4GB RAM, 64GB storage",
     catergory: "electronics",
@@ -125,8 +121,7 @@ export const userRows = [
   {
     id: 9,
     product: "Lenovo ideapad slim 3",
-    productimg:
-      "https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+    productimg: "",
     price: "50000",
     description: "15.6 inch",
     catergory: "electronics",
@@ -135,8 +130,7 @@ export const userRows = [
   {
     id: 10,
     product: "The Alchemist",
-    productimg:
-      "https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+    productimg: "",
     price: "700",
     description: "bestseller book in fiction",
     catergory: "Books",

@@ -5,6 +5,7 @@ import {
   AccountCircleOutlined,
   Dashboard,
   ExitToApp,
+  Paid,
   PersonOutline,
   Store,
 } from "@mui/icons-material";
@@ -96,6 +97,13 @@ const SideBar = () => {
                 style={{ fontSize: "24px", color: "#7451f8" }}
               />
               <Text>Profile</Text>
+            </List>
+          </Link>
+
+          <Link to="/dashboard/transactions">
+            <List>
+              <Paid style={{ fontSize: "24px", color: "#7451f8" }} />
+              <Text>All Transactions</Text>
             </List>
           </Link>
 
