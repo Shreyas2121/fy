@@ -9,32 +9,38 @@ const Navbar = () => {
       <span className="text-blue-700 text-2xl font-bold px-3">Chainkart</span>
       <ul className="flex gap-5 ">
         <Link to="/">
-          <li>Electronics</li>
+          <li className="hover">Electronics</li>
         </Link>
         <Link to="/">
-          <li>Sports</li>
+          <li className="hover">Sports</li>
         </Link>
         <Link to="/">
-          <li>Fashion</li>
+          <li className="hover">Fashion</li>
         </Link>
         <Link to="/">
-          <li>Books</li>
+          <li className="hover">Books</li>
         </Link>
         <Link to="/">
-          <li>Home Appliances</li>
+          <li className="hover">Home Appliances</li>
         </Link>
       </ul>
       <div className="px-3 flex gap-5">
-        <PermIdentityOutlined className="bg-blue-500 rounded-xl p-1 w-8 h-8" />
-        {user ? (
-          <span>Log Out</span>
-        ) : (
-          <Link to="/login">
-            <span>Log In</span>
-          </Link>
-        )}
+        <div className="bg-[#F0F8FF] rounded-full p-1 w-9 h-9 text-gray-500 flex items-center justify-center">
+          <PermIdentityOutlined />
+        </div>
+        <div className="flex justify-center items-center">
+          {user ? (
+            <span className="hover mt-2">Log Out</span>
+          ) : (
+            <Link to="/login">
+              <span className="hover mt-2">Log In</span>
+            </Link>
+          )}
+        </div>
 
-        <ShoppingBagOutlined className="bg-blue-500 rounded-xl p-1 w-8 h-8" />
+        <div className="bg-[#F0F8FF] rounded-full p-1 w-9 h-9 text-gray-500 flex items-center justify-center">
+          <ShoppingBagOutlined />
+        </div>
       </div>
     </div>
   );
