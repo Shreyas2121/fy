@@ -1,12 +1,13 @@
 import { PermIdentityOutlined, ShoppingBagOutlined } from "@mui/icons-material";
+import { Badge } from "@mui/material";
 import React from "react";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const user = false;
   return (
-    <div className="fixed flex top-10 justify-between w-full ">
-      <span className="text-blue-700 text-2xl font-bold px-3">Chainkart</span>
+    <div className="flex justify-between w-full mt-9 ">
+      <span className="text-blue-700 text-2xl font-bold px-3 ">Chainkart</span>
       <ul className="flex gap-5 ">
         <Link to="/">
           <li className="hover">Electronics</li>
@@ -38,8 +39,10 @@ const Navbar = () => {
           )}
         </div>
 
-        <div className="bg-[#F0F8FF] rounded-full p-1 w-9 h-9 text-gray-500 flex items-center justify-center">
-          <ShoppingBagOutlined />
+        <div className="bg-[#F0F8FF] rounded-full p-1 w-9 h-9 text-gray-500 flex items-center justify-center mr-2">
+          <Badge badgeContent={2} color="primary">
+            <ShoppingBagOutlined />
+          </Badge>
         </div>
       </div>
     </div>

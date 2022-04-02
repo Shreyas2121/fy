@@ -7,7 +7,7 @@ import CompanyRegister from "./components/Auth/companyregister";
 import Users from "./pages/company/Users";
 import Home from "./pages/Main/Home";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <Routes>
@@ -20,6 +20,6 @@ function App() {
       </Routes>
     </div>
   );
-}
+};
 
 export default App;
