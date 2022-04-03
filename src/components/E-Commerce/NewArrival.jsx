@@ -5,7 +5,7 @@ const NewArrival = () => {
     <section className="py-20 bg-[#f0f8ff]">
       <div className="container mx-auto px-4">
         <h2 className="mb-16 md:mb-24 text-4xl md:text-5xl font-bold font-heading">
-          Discover our products
+          Discover New Arrivals
         </h2>
         <div className="flex flex-wrap -mx-3 mb-24">
           <div className="w-full md:w-1/2 lg:w-1/4 px-3 mb-6 lg:mb-0">
@@ -101,6 +101,9 @@ const NewArrival = () => {
           <div className="w-full md:w-1/2 lg:w-1/4 px-3 mb-6 md:mb-0">
             <div className="p-6 bg-gray-50">
               <span className="px-2 py-1" />
+              <span className="px-2 py-1 text-xs font-bold font-heading border-2 border-blue-300 rounded-full text-blue-300 bg-white">
+                NEW
+              </span>
               <a className="block px-6 mt-6 mb-2" href="#">
                 <img
                   className="mb-5 mx-auto h-56 w-full object-contain"

@@ -12,7 +12,9 @@ const Navbar = () => {
   const [isOpenH, setIsOpenH] = useState(false);
   return (
     <div className="flex justify-between w-full mt-9 ">
-      <span className="text-blue-700 text-2xl font-bold px-3 ">Chainkart</span>
+      <Link to="/" className="text-indigo-600 text-2xl font-bold px-3 ">
+        Chainkart
+      </Link>
       <ul className="flex gap-5 ">
         <li className="hover relative" onClick={() => setIsOpenE(!isOpenE)}>
           Electronics
@@ -31,7 +33,7 @@ const Navbar = () => {
 
         {isOpenS && (
           <div className=" top-16 left-[610px] absolute bg-[#f0f8ff] p-3 z-50 flex flex-col gap-2 hover:text-black">
-            <Link to="/">Cricket Equipments</Link>
+            <Link to="/">Cricket</Link>
             <Link to="/">Football</Link>
             <Link to="/">Badminton</Link>
           </div>
@@ -66,7 +68,7 @@ const Navbar = () => {
           <div className=" top-16 left-[815px] absolute bg-[#f0f8ff] p-3 z-50 flex flex-col gap-2 hover:text-black">
             <Link to="/">Television</Link>
             <Link to="/">Washing Machine</Link>
-            <Link to="/">AC</Link>
+            <Link to="/">Air Conditioner</Link>
           </div>
         )}
       </ul>

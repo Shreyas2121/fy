@@ -19,14 +19,14 @@ const AboutUs = () => {
               src="yofte-assets/elements/dots.svg"
               alt=""
             />
-            <div className="relative text-center">
-              <span className="inline-flex mb-16 items-center justify-center w-20 h-20 bg-white rounded-full">
+            <div className="relative text-center ">
+              <span className="inline-flex  mb-16 items-center justify-center w-20 h-20 bg-white rounded-full">
                 <LocalShippingOutlined className="h-10 w-10" />
               </span>
               <h3 className="mb-4 text-xl font-bold font-heading">
                 Free Shipping
               </h3>
-              <p>From ₹500</p>
+              <p>For orders above ₹500</p>
             </div>
           </div>
           <div className="relative w-full md:w-1/2 lg:w-1/4 px-4 mb-16 lg:mb-0">
@@ -42,7 +42,7 @@ const AboutUs = () => {
               <h3 className="mb-4 text-xl font-bold font-heading">
                 Secure Shopping
               </h3>
-              <p>100% Guarantee</p>
+              <p>100% guarantee ensured by Ethereum blockchain</p>
             </div>
           </div>
           <div className="relative w-full md:w-1/2 lg:w-1/4 px-4 mb-16 md:mb-0">
@@ -58,7 +58,8 @@ const AboutUs = () => {
               <h3 className="mb-4 text-xl font-bold font-heading">
                 Customer Satisfaction
               </h3>
-              <p>100% Positive Feedbacks</p>
+              <p>High postive feedbacks received</p>
+              <p>from customers</p>
             </div>
           </div>
           <div className="relative w-full md:w-1/2 lg:w-1/4 px-4">
@@ -67,7 +68,7 @@ const AboutUs = () => {
                 <DoneOutlineOutlined />
               </span>
               <h3 className="mb-4 text-xl font-bold font-heading">Genuine</h3>
-              <p>100% Authentic</p>
+              <p>Only 100% authentic product listings</p>
             </div>
           </div>
         </div>

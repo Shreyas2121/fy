@@ -15,7 +15,7 @@ const Footer = () => {
   return (
     <div className="flex bg-white sticky top-full">
       <div className="flex flex-col flex-[1] p-5">
-        <span className="font-bold text-lg mb-2">Chainkart</span>
+        <span className="font-bold text-lg mb-2">About Us</span>
         <p className="mx-0 my-5">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
           quod quasi quae voluptas, sequi magnam adipisci repellendus blanditiis
@@ -48,10 +48,6 @@ const Footer = () => {
           </Link>
 
           <Link to="/" className="w-1/2 mb-2">
-            <li>Cart</li>
-          </Link>
-
-          <Link to="/" className="w-1/2 mb-2">
             <li>Electronics</li>
           </Link>
 
@@ -68,15 +64,15 @@ const Footer = () => {
           </Link>
 
           <Link to="/" className="w-1/2 mb-2">
+            <li>Terms</li>
+          </Link>
+
+          <Link to="/" className="w-1/2 mb-2">
             <li>Home Appliances</li>
           </Link>
 
           <Link to="/" className="w-1/2 mb-2">
             <li>My Account</li>
-          </Link>
-
-          <Link to="/" className="w-1/2 mb-2">
-            <li>Terms</li>
           </Link>
         </ul>
       </div>

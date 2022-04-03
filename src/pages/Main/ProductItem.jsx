@@ -1,16 +1,12 @@
 import React from "react";
-import Footer from "../../components/E-Commerce/Footer";
-import Navbar from "../../components/E-Commerce/Navbar";
 
 const ProductItem = () => {
   const user = false;
   return (
     <div
       class="relative max-w-screen-xl px-2 py-8 mx-auto"
-      style={{ paddingBottom: "400px" }}
+      style={{ paddingBottom: "200px" }}
     >
-      <Navbar />
-
       <div style={{ paddingTop: "60px" }}>
         <h1 class="text-2xl font-bold lg:text-3xl">
           Vector X TBD-Stealth-5 Football, Adult Size 5 (White/Red)t
@@ -36,18 +32,8 @@ const ProductItem = () => {
 
         <div class="lg:top-0 lg:sticky">
           <form class="space-y-4 lg:pt-8">
-            <div class="p-4 bg-gray-100 border rounded">
-              <p class="text-sm">
-                <span class="block">Pay as low as $3/mo with 0% APR.</span>
-
-                <a href="" class="inline-block mt-1 underline">
-                  Find out more
-                </a>
-              </p>
-            </div>
-
             <div>
-              <p class="text-xl font-bold">Price: Rs.1999.99</p>
+              <p class="text-xl font-bold">Price: ₹1999</p>
             </div>
 
             <button
@@ -91,7 +77,6 @@ const ProductItem = () => {
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 };

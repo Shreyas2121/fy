@@ -17,14 +17,14 @@ const Preview = () => {
 
                 <a
                   href="/collections/watches"
-                  class="inline-block px-6 py-3 mt-6 text-sm text-white bg-black rounded"
+                  class="inline-block px-6 py-3 mt-6 text-sm text-white bg-indigo-600 rounded"
                 >
-                  View the Range
+                  View More
                 </a>
               </div>
             </div>
 
-            <div class="grid grid-cols-2 gap-4 lg:col-span-2 lg:grid-cols-3 lg:py-12 ml-3">
+            <div class="grid grid-cols-2 gap-6 lg:col-span-2 lg:grid-cols-3 lg:py-12 ml-3">
               <a href="/product/simple-watch" class="block">
                 <div class="aspect-w-1 aspect-h-1">
                   <img
