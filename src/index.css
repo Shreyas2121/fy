@@ -12,6 +12,6 @@
   }
 
   .hover {
-    @apply hover:text-blue-600 hover:font-bold;
+    @apply hover:text-blue-600 hover:font-bold hover:cursor-pointer;
   }
 }

@@ -187,7 +187,7 @@ const NewArrival = () => {
         </div>
         <div className="text-center">
           <a
-            className="inline-block bg-blue-700 hover:bg-blue-400 text-white font-bold font-heading py-6 px-8 rounded-md uppercase"
+            className="inline-block text-blue-600 font-bold font-heading  rounded-md uppercase"
             href="#"
           >
             Show More
