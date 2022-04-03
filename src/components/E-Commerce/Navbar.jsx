@@ -72,7 +72,9 @@ const Navbar = () => {
       </ul>
       <div className="px-3 flex gap-5">
         <div className="bg-[#F0F8FF] rounded-full p-1 w-9 h-9 text-gray-500 flex items-center justify-center">
-          <PermIdentityOutlined />
+          <Link to="/profile">
+            <PermIdentityOutlined />
+          </Link>
         </div>
         <div className="flex justify-center items-center">
           {user ? (

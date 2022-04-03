@@ -13,7 +13,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="flex bg-white">
+    <div className="flex bg-white sticky top-full">
       <div className="flex flex-col flex-[1] p-5">
         <span className="font-bold text-lg mb-2">Chainkart</span>
         <p className="mx-0 my-5">

@@ -1,21 +1,20 @@
 import React from "react";
-import AboutUs from "../../components/E-Commerce/AboutUs";
-import Banner from "../../components/E-Commerce/Banner";
+import { Route, Routes } from "react-router-dom";
 import Footer from "../../components/E-Commerce/Footer";
+import Main from "../../components/E-Commerce/Main";
 import Navbar from "../../components/E-Commerce/Navbar";
-import NewArrival from "../../components/E-Commerce/NewArrival";
-import Preview from "../../components/E-Commerce/Preview";
-import Slider from "../../components/E-Commerce/Slider";
+import ProductItem from "./ProductItem";
+import Profile from "./Profle";
 
 const Home = () => {
   return (
-    <div>
+    <div className="min-h-[100vh]">
       <Navbar />
-      <Slider />
-      <Preview />
-      <NewArrival />
-      <AboutUs />
-      <Banner />
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="productItem" element={<ProductItem />} />
+      </Routes>
       <Footer />
     </div>
   );

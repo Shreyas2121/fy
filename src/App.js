@@ -6,16 +6,12 @@ import UserSignUp from "./components/Auth/usersignup";
 import CompanyRegister from "./components/Auth/companyregister";
 import Users from "./pages/company/Users";
 import Home from "./pages/Main/Home";
-import ProductItem from "./pages/Main/ProductItem";
-import Profile from "./pages/Main/Profle";
 
 const App = () => {
   return (
     <div className="App">
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/productItem" element={<ProductItem />} />
-        <Route path="profile" element={<Profile />} />
+        <Route path="/*" element={<Home />} />
         <Route path="login" element={<UserLogin />} />
         <Route path="clogin" element={<CompanyLogin />} />
         <Route path="cregister" element={<CompanyRegister />} />
