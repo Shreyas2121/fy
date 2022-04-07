@@ -21,7 +21,7 @@ const Navbar = () => {
         </li>
         {isOpenE && (
           <div className=" top-16 absolute bg-[#f0f8ff] p-3 z-50 flex flex-col gap-2 hover:text-black">
-            <Link to="/Electronics/Laptop">Laptop</Link>
+            <Link to="/Electronics/Laptops">Laptop</Link>
             <Link to="/Electronics/Headphones">Headphones</Link>
             <Link to="/Electronics/Smartphones">Smartphones</Link>
           </div>
