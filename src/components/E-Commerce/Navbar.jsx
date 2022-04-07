@@ -21,9 +21,9 @@ const Navbar = () => {
         </li>
         {isOpenE && (
           <div className=" top-16 absolute bg-[#f0f8ff] p-3 z-50 flex flex-col gap-2 hover:text-black">
-            <Link to="/">Laptop</Link>
-            <Link to="/">Headphones</Link>
-            <Link to="/">Smartphones</Link>
+            <Link to="/Electronics/Laptop">Laptop</Link>
+            <Link to="/Electronics/Headphones">Headphones</Link>
+            <Link to="/Electronics/Smartphones">Smartphones</Link>
           </div>
         )}
 
@@ -33,9 +33,9 @@ const Navbar = () => {
 
         {isOpenS && (
           <div className=" top-16 left-[610px] absolute bg-[#f0f8ff] p-3 z-50 flex flex-col gap-2 hover:text-black">
-            <Link to="/">Cricket</Link>
-            <Link to="/">Football</Link>
-            <Link to="/">Badminton</Link>
+            <Link to="/Sports/Cricket">Cricket</Link>
+            <Link to="/Sports/Football">Football</Link>
+            <Link to="/Sports/Badminton">Badminton</Link>
           </div>
         )}
 
@@ -44,9 +44,9 @@ const Navbar = () => {
         </li>
         {isOpenF && (
           <div className=" top-16 left-[675px] absolute bg-[#f0f8ff] p-3 z-50 flex flex-col gap-2 hover:text-black">
-            <Link to="/">Shirts</Link>
-            <Link to="/">Shoes</Link>
-            <Link to="/">Watches</Link>
+            <Link to="/Shirts/Shirts">Shirts</Link>
+            <Link to="/Shirts/Shoes">Shoes</Link>
+            <Link to="/Shirts/Watches">Watches</Link>
           </div>
         )}
 
@@ -55,9 +55,9 @@ const Navbar = () => {
         </li>
         {isOpenB && (
           <div className=" top-16 left-[750px] absolute bg-[#f0f8ff] p-3 z-50 flex flex-col gap-2 hover:text-black">
-            <Link to="/">Autobiography</Link>
-            <Link to="/">Textbooks</Link>
-            <Link to="/">Fiction</Link>
+            <Link to="/Books/Autobiography">Autobiography</Link>
+            <Link to="/Books/Textbooks">Textbooks</Link>
+            <Link to="/Books/Fiction">Fiction</Link>
           </div>
         )}
 
@@ -66,9 +66,9 @@ const Navbar = () => {
         </li>
         {isOpenH && (
           <div className=" top-16 left-[815px] absolute bg-[#f0f8ff] p-3 z-50 flex flex-col gap-2 hover:text-black">
-            <Link to="/">Television</Link>
-            <Link to="/">Washing Machine</Link>
-            <Link to="/">Air Conditioner</Link>
+            <Link to="/Home_Appliances/Television">Television</Link>
+            <Link to="/Home_Appliances/Washing_Machine">Washing Machine</Link>
+            <Link to="/Home_Appliances/Air_Conditioner">Air Conditioner</Link>
           </div>
         )}
       </ul>

@@ -5,6 +5,7 @@ import Main from "../../components/E-Commerce/Main";
 import Navbar from "../../components/E-Commerce/Navbar";
 import ProductItem from "./ProductItem";
 import Profile from "./Profle";
+import SubCategory from "./SubCategory";
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <Navbar />
       <Routes>
         <Route path="/" element={<Main />} />
+        <Route path="/:category/:subCategory" element={<SubCategory />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="productItem" element={<ProductItem />} />
       </Routes>
