@@ -20,8 +20,10 @@ const AboutUs = () => {
               alt=""
             />
             <div className="relative text-center ">
-              <span className="inline-flex  mb-16 items-center justify-center w-20 h-20 bg-white rounded-full">
-                <LocalShippingOutlined className="h-10 w-10" />
+              <span className="inline-flex  mb-16 items-center justify-center w-20 h-20 bg-indigo-600 rounded-full">
+                <LocalShippingOutlined
+                  style={{ width: "35px", height: "35px", color: "white" }}
+                />
               </span>
               <h3 className="mb-4 text-xl font-bold font-heading">
                 Free Shipping
@@ -36,8 +38,10 @@ const AboutUs = () => {
               alt=""
             />
             <div className="relative text-center">
-              <span className="inline-flex mb-16 items-center justify-center w-20 h-20 bg-white rounded-full">
-                <LockOutlined />
+              <span className="inline-flex mb-16 items-center justify-center w-20 h-20 bg-indigo-600 rounded-full">
+                <LockOutlined
+                  style={{ width: "35px", height: "35px", color: "white" }}
+                />
               </span>
               <h3 className="mb-4 text-xl font-bold font-heading">
                 Secure Shopping
@@ -52,8 +56,10 @@ const AboutUs = () => {
               alt=""
             />
             <div className="relative text-center">
-              <span className="inline-flex mb-16 items-center justify-center w-20 h-20 bg-white rounded-full">
-                <ThumbUpAltOutlined />
+              <span className="inline-flex mb-16 items-center justify-center w-20 h-20 bg-indigo-600 rounded-full">
+                <ThumbUpAltOutlined
+                  style={{ width: "35px", height: "35px", color: "white" }}
+                />
               </span>
               <h3 className="mb-4 text-xl font-bold font-heading">
                 Customer Satisfaction
@@ -64,8 +70,10 @@ const AboutUs = () => {
           </div>
           <div className="relative w-full md:w-1/2 lg:w-1/4 px-4">
             <div className="relative text-center">
-              <span className="inline-flex mb-16 items-center justify-center w-20 h-20 bg-white rounded-full">
-                <DoneOutlineOutlined />
+              <span className="inline-flex mb-16 items-center justify-center w-20 h-20 bg-indigo-600 rounded-full">
+                <DoneOutlineOutlined
+                  style={{ width: "35px", height: "35px", color: "white" }}
+                />
               </span>
               <h3 className="mb-4 text-xl font-bold font-heading">Genuine</h3>
               <p>Only 100% authentic product listings</p>

@@ -106,11 +106,6 @@ const SideBar = () => {
               <Text>All Transactions</Text>
             </List>
           </Link>
-
-          <List>
-            <ExitToApp style={{ fontSize: "24px", color: "#7451f8" }} />
-            <Text>LogOut</Text>
-          </List>
         </Lists>
       </Center>
     </Container>

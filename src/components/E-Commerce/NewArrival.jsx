@@ -1,3 +1,5 @@
+import { AddShoppingCart } from "@mui/icons-material";
+import { BsCart3 } from "react-icons/bs";
 import React from "react";
 
 const NewArrival = () => {
@@ -33,23 +35,7 @@ const NewArrival = () => {
                 className="ml-auto mr-2 flex items-center justify-center w-12 h-12 border rounded-lg hover:border-gray-500"
                 href="#"
               >
-                <svg
-                  width={12}
-                  height={12}
-                  viewBox="0 0 12 12"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect x={5} width={2} height={12} fill="#161616" />
-                  <rect
-                    x={12}
-                    y={5}
-                    width={2}
-                    height={12}
-                    transform="rotate(90 12 5)"
-                    fill="#161616"
-                  />
-                </svg>
+                <BsCart3 />
               </a>
             </div>
           </div>
@@ -78,23 +64,8 @@ const NewArrival = () => {
                 className="ml-auto mr-2 flex items-center justify-center w-12 h-12 border rounded-lg hover:border-gray-500"
                 href="#"
               >
-                <svg
-                  width={12}
-                  height={12}
-                  viewBox="0 0 12 12"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect x={5} width={2} height={12} fill="#161616" />
-                  <rect
-                    x={12}
-                    y={5}
-                    width={2}
-                    height={12}
-                    transform="rotate(90 12 5)"
-                    fill="#161616"
-                  />
-                </svg>
+                {/* <AddShoppingCart /> */}
+                <BsCart3 />
               </a>
             </div>
           </div>
@@ -122,23 +93,8 @@ const NewArrival = () => {
                 className="ml-auto mr-2 flex items-center justify-center w-12 h-12 border rounded-lg hover:border-gray-500"
                 href="#"
               >
-                <svg
-                  width={12}
-                  height={12}
-                  viewBox="0 0 12 12"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect x={5} width={2} height={12} fill="#161616" />
-                  <rect
-                    x={12}
-                    y={5}
-                    width={2}
-                    height={12}
-                    transform="rotate(90 12 5)"
-                    fill="#161616"
-                  />
-                </svg>
+                {/* <AddShoppingCart /> */}
+                <BsCart3 />
               </a>
             </div>
           </div>
@@ -156,9 +112,9 @@ const NewArrival = () => {
                 <h3 className="mb-2 text-xl font-bold font-heading">
                   Autobiography
                 </h3>
-                <p className="text-lg font-bold font-heading text-blue-500">
+                <p className="text-lg font-bold font-heading text-indigo-600">
                   <span>₹99</span>
-                  <span className="text-xs text-gray-500 font-semibold font-heading line-through">
+                  <span className="text-xs text-black font-semibold font-heading line-through">
                     ₹130
                   </span>
                 </p>
@@ -167,30 +123,15 @@ const NewArrival = () => {
                 className="ml-auto mr-2 flex items-center justify-center w-12 h-12 border rounded-lg hover:border-gray-500"
                 href="#"
               >
-                <svg
-                  width={12}
-                  height={12}
-                  viewBox="0 0 12 12"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect x={5} width={2} height={12} fill="#161616" />
-                  <rect
-                    x={12}
-                    y={5}
-                    width={2}
-                    height={12}
-                    transform="rotate(90 12 5)"
-                    fill="#161616"
-                  />
-                </svg>
+                {/* <AddShoppingCart /> */}
+                <BsCart3 />
               </a>
             </div>
           </div>
         </div>
         <div className="text-center">
           <a
-            className="inline-block text-blue-600 font-bold font-heading  rounded-md uppercase"
+            className="inline-block text-indigo-600 font-bold font-heading  rounded-md uppercase"
             href="#"
           >
             Show More

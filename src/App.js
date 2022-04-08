@@ -9,7 +9,7 @@ import Home from "./pages/Main/Home";
 
 const App = () => {
   return (
-    <div className="App">
+    <div className="min-h-screen flex flex-col justify-between">
       <Routes>
         <Route path="/*" element={<Home />} />
         <Route path="login" element={<UserLogin />} />

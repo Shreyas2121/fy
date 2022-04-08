@@ -13,7 +13,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="flex bg-">
+    <div className="flex mb-auto">
       <div className="flex flex-col flex-[1] p-5">
         <span className="font-bold text-lg mb-2">About Us</span>
         <p className="mx-0 my-5">

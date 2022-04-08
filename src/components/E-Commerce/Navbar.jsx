@@ -80,10 +80,10 @@ const Navbar = () => {
         </div>
         <div className="flex justify-center items-center">
           {user ? (
-            <span className="hover mt-2">Log Out</span>
+            <span className="hover mt-2">Logout</span>
           ) : (
             <Link to="/login">
-              <span className="hover mt-2">Log In</span>
+              <span className="hover mt-2">Sign in</span>
             </Link>
           )}
         </div>

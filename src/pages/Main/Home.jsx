@@ -9,7 +9,7 @@ import SubCategory from "./SubCategory";
 
 const Home = () => {
   return (
-    <div className="min-h-[100vh]">
+    <>
       <Navbar />
       <Routes>
         <Route path="/" element={<Main />} />
@@ -18,7 +18,7 @@ const Home = () => {
         <Route path="productItem" element={<ProductItem />} />
       </Routes>
       <Footer />
-    </div>
+    </>
   );
 };
 

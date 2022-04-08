@@ -1,7 +1,11 @@
 import React from "react";
 import logo from "../../assets/Logo.svg";
 import styled from "styled-components";
-import { LanguageOutlined, SearchOutlined } from "@mui/icons-material";
+import {
+  ExitToApp,
+  LanguageOutlined,
+  SearchOutlined,
+} from "@mui/icons-material";
 
 const Container = styled.div`
   height: 50px;
@@ -53,8 +57,8 @@ const TitleBar = () => {
         </Search>
         <Items>
           <Item>
-            <LanguageOutlined style={{ fontSize: "20px" }} />
-            English
+            <ExitToApp className="text-indigo-600" />
+            Logout
           </Item>
         </Items>
       </Wrapper>

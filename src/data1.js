@@ -387,13 +387,13 @@ export const data = {
         name: "Haier",
         desc: "1.6 Ton 5 Star Elegante Cool Split AC (HSU19E-TXB5B(INV), White)",
         price: "45000",
-        img: "https://image.haier.com/in/air-conditioners/W020220208563203073934.jpg",
+        img: "https://www.reliancedigital.in/medias/Haier-HSU18T-NMW3B-Air-Conditioners-581110070-i-1-1200Wx1200H?context=bWFzdGVyfGltYWdlc3w2NDI1MnxpbWFnZS9qcGVnfGltYWdlcy9oZGEvaGFhLzk0ODM0NDMxNzU0NTQuanBnfDI1YzIwYjM1M2Y3ZjQwZTA4YzNiM2M3NjBiZjUxYmQzYTYzMjg4MTZkZjAxOTA3YTgzMWNiYzUxMGQ4MDNiMjc",
       },
       {
         name: "Blue Star",
         desc: "0.8 Tons 3 Star Inverter Split AC(Copper, IC309RBTU, White)",
         price: "29000",
-        img: "https://m.media-amazon.com/images/I/51+ZOn7EQCL._SX679_.jpg",
+        img: "https://www.reliancedigital.in/medias/BLUESTAR-IC518DLTU-Air-Conditioners-581110203-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wyMjc1MHxpbWFnZS9qcGVnfGltYWdlcy9oMjEvaGViLzk1OTQ2ODcxOTMxMTguanBnfDU3YmRmNTA2MWJjODUxNGVmYTc0MjA2NWJmNzUzZjc0MWExZWQzMTE1NDBiNGRiYjVkODExNDc2NzE0YjRlNWI",
       },
       {
         name: "Whirlpool",
