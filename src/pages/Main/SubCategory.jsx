@@ -13,7 +13,7 @@ const SubCategory = () => {
   );
   const products = res1[0][1];
   return (
-    <div className="p-4 grid grid-cols-1 gap-y-10 sm:grid-cols-2 gap-x-6 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
+    <div className="grid grid-cols-4 gap-5 mt-5 p-10">
       {products.map((product) => (
         <ProductCard
           name={product.name}
