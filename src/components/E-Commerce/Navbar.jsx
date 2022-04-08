@@ -44,9 +44,9 @@ const Navbar = () => {
         </li>
         {isOpenF && (
           <div className=" top-16 left-[675px] absolute bg-[#f0f8ff] p-3 z-50 flex flex-col gap-2 hover:text-black">
-            <Link to="/Shirts/Shirts">Shirts</Link>
-            <Link to="/Shirts/Shoes">Shoes</Link>
-            <Link to="/Shirts/Watches">Watches</Link>
+            <Link to="/Fashion/Shirts">Shirts</Link>
+            <Link to="/Fashion/Shoes">Shoes</Link>
+            <Link to="/Fashion/Watches">Watches</Link>
           </div>
         )}
 
