@@ -1,6 +1,6 @@
 import React from "react";
 
-const BasicInfo = () => {
+const Address = () => {
   return (
     <div className="min-h-screen flex flex-col justify-center ml-12">
       <form
@@ -8,7 +8,7 @@ const BasicInfo = () => {
         style={{ boxShadow: "2px 4px 10px 1px rgba(201, 201, 201, 0.47)" }}
       >
         <div className="flex gap-2 items-center">
-          <label>First Name:- </label>
+          <label>House Number </label>
           <input
             className="border-2 border-indigo-600 rounded-lg"
             type="text"
@@ -19,9 +19,9 @@ const BasicInfo = () => {
         </div>
 
         <div className="flex gap-2 items-center">
-          <label>Last Name:- </label>
+          <label>City </label>
           <input
-            className="border-2 border-indigo-600 rounded-lg"
+            className="border-2 border-indigo-600 rounded-lg ml-[77px]"
             type="text"
           />
           <button className="bg-indigo-700 text-white p-1 rounded-lg text-sm">
@@ -30,9 +30,9 @@ const BasicInfo = () => {
         </div>
 
         <div className="flex gap-2 items-center ">
-          <label>Email:- </label>
+          <label>Landmark </label>
           <input
-            className="border-2 border-indigo-600 rounded-lg ml-9"
+            className="border-2 border-indigo-600 rounded-lg ml-8"
             type="email"
           />
           <button className="bg-indigo-700 text-white p-1 rounded-lg text-sm">
@@ -41,10 +41,21 @@ const BasicInfo = () => {
         </div>
 
         <div className="flex gap-2 items-center">
-          <label>Password:- </label>
+          <label>State </label>
           <input
-            className="border-2 border-indigo-600 rounded-lg ml-1"
+            className="border-2 border-indigo-600 rounded-lg ml-16"
             type="text"
+          />
+          <button className="bg-indigo-700 text-white p-1 rounded-lg text-sm">
+            Edit
+          </button>
+        </div>
+
+        <div className="flex gap-2 items-center">
+          <label>Pincode </label>
+          <input
+            className="border-2 border-indigo-600 rounded-lg ml-11"
+            type="number"
           />
           <button className="bg-indigo-700 text-white p-1 rounded-lg text-sm">
             Edit
@@ -59,4 +70,4 @@ const BasicInfo = () => {
   );
 };
 
-export default BasicInfo;
+export default Address;
